@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Portfolio profesional Fajar Cahyadiputra, Backend Developer dengan pengalaman 5 tahun dalam membangun API, distributed systems, database, messaging, dan cloud-native deployment." name="description"/>
+<meta content="#070b14" name="theme-color"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<meta content="Fajar Cahyadiputra" name="author"/>
+<meta content="Fajar Cahyadiputra — Backend Developer" property="og:title"/>
+<meta content="Portfolio profesional Fajar Cahyadiputra, Backend Developer dengan pengalaman membangun API, distributed systems, database, messaging, dan cloud-native deployment." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="id_ID" property="og:locale"/>
+<meta content="Fajar Cahyadiputra Portfolio" property="og:site_name"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="Fajar Cahyadiputra — Backend Developer" name="twitter:title"/>
+<meta content="Backend Developer yang membangun API dan sistem backend yang scalable, reliable, dan mudah dipelihara." name="twitter:description"/>
+<title>Fajar Cahyadiputra — Backend Developer</title>
+<!-- Typography -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="js/tailwind-config.js"></script>
+<link href="css/styles.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Fajar Cahyadiputra",
+  "jobTitle": "Backend Developer",
+  "description": "Backend Developer dengan pengalaman membangun API, distributed systems, database, messaging, dan cloud-native deployment.",
+  "email": "mailto:fajarcahyadiputra3@gmail.com",
+  "sameAs": [
+    "https://github.com/fajarcahyadiputra3",
+    "https://linkedin.com/in/fajarcahyadiputra3"
+  ],
+  "knowsAbout": [
+    "Backend Development",
+    "REST API",
+    "Distributed Systems",
+    "Go",
+    "Node.js",
+    "PHP",
+    "PostgreSQL",
+    "Redis",
+    "Docker",
+    "Kubernetes"
+  ]
+}
+</script>
+</head>
+<body>
+<div class="grid-bg"></div>
+<div class="noise"></div>
+<!-- Navbar -->
+<header class="nav-glass fixed inset-x-0 top-0 z-50" id="navbar">
+<nav aria-label="Navigasi utama" class="section-shell flex h-[76px] items-center justify-between" data-i18n-aria="mainNavigation">
+<a aria-label="Kembali ke beranda" class="group flex items-center gap-3" data-i18n-aria="backHome" href="#home">
+<span class="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-cyan-400 via-blue-500 to-violet-500 font-display text-sm font-bold text-slate-950 shadow-glow transition-transform group-hover:rotate-6 group-hover:scale-105">FC</span>
+<span class="font-display text-[15px] font-bold tracking-tight sm:text-base">Fajar<span class="text-cyan-400">.</span>dev</span>
+</a>
+<div class="hidden items-center gap-7 lg:flex">
+<a class="nav-link active" data-i18n="navHome" href="#home">Home</a>
+<a class="nav-link" data-i18n="navAbout" href="#about">About</a>
+<a class="nav-link" data-i18n="navSkills" href="#skills">Skills</a>
+<a class="nav-link" data-i18n="navProjects" href="#projects">Projects</a>
+<a class="nav-link" data-i18n="navExperience" href="#experience">Experience</a>
+<a class="nav-link" data-i18n="navContact" href="#contact">Contact</a>
+</div>
+<div class="flex items-center gap-2"><div class="relative">
+<svg aria-hidden="true" class="pointer-events-none absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-[var(--muted)]" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"></path></svg>
+<select aria-label="Pilih bahasa" class="h-10 cursor-pointer appearance-none rounded-xl border border-black/10 bg-black/[.025] py-0 pl-8 pr-7 text-xs font-bold text-[var(--text)] outline-none transition hover:border-cyan-400/40 focus:border-cyan-400/50 dark:border-white/10 dark:bg-white/[.035]" data-i18n-aria="chooseLanguage" id="languageSelect">
+<option value="id">ID</option>
+<option value="en">EN</option>
+</select>
+<svg aria-hidden="true" class="pointer-events-none absolute right-2 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-[var(--muted)]" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="m7 10 5 5 5-5"></path></svg>
+</div>
+<button aria-label="Ubah tema" class="grid h-10 w-10 place-items-center rounded-xl border border-black/10 bg-black/[.025] text-[var(--text)] transition hover:border-cyan-400/40 hover:bg-cyan-400/10 dark:border-white/10 dark:bg-white/[.035]" data-i18n-aria="changeTheme" data-i18n-title="changeTheme" id="themeToggle" title="Ubah tema" type="button">
+<svg aria-hidden="true" class="theme-icon h-5 w-5" fill="none" id="themeIcon" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M21 12.8A8.5 8.5 0 1 1 11.2 3 6.7 6.7 0 0 0 21 12.8Z"></path>
+</svg>
+</button>
+<a class="btn-primary hidden min-h-10 rounded-xl px-4 py-2 text-sm sm:inline-flex" data-i18n="letsTalk" href="#contact">Let's Talk</a>
+<button aria-controls="mobileMenu" aria-expanded="false" aria-label="Buka menu" class="grid h-10 w-10 place-items-center rounded-xl border border-black/10 bg-black/[.025] text-[var(--text)] lg:hidden dark:border-white/10 dark:bg-white/[.035]" data-menu-aria="true" id="menuButton" type="button">
+<svg aria-hidden="true" class="h-5 w-5" fill="none" id="menuIcon" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+</button>
+</div>
+</nav>
+<div class="mobile-menu border-t border-black/5 lg:hidden dark:border-white/5" id="mobileMenu">
+<div class="section-shell grid gap-1 py-4">
+<a class="mobile-link rounded-xl px-4 py-3 font-semibold text-[var(--muted)] hover:bg-cyan-400/10 hover:text-cyan-400" data-i18n="navHome" href="#home">Home</a>
+<a class="mobile-link rounded-xl px-4 py-3 font-semibold text-[var(--muted)] hover:bg-cyan-400/10 hover:text-cyan-400" data-i18n="navAbout" href="#about">About</a>
+<a class="mobile-link rounded-xl px-4 py-3 font-semibold text-[var(--muted)] hover:bg-cyan-400/10 hover:text-cyan-400" data-i18n="navSkills" href="#skills">Skills</a>
+<a class="mobile-link rounded-xl px-4 py-3 font-semibold text-[var(--muted)] hover:bg-cyan-400/10 hover:text-cyan-400" data-i18n="navProjects" href="#projects">Projects</a>
+<a class="mobile-link rounded-xl px-4 py-3 font-semibold text-[var(--muted)] hover:bg-cyan-400/10 hover:text-cyan-400" data-i18n="navExperience" href="#experience">Experience</a>
+<a class="mobile-link rounded-xl px-4 py-3 font-semibold text-[var(--muted)] hover:bg-cyan-400/10 hover:text-cyan-400" data-i18n="navContact" href="#contact">Contact</a>
+</div>
+</div>
+</header>
+<main id="main-content">
+<!-- Hero -->
+<section class="relative flex min-h-screen items-center overflow-hidden pb-16 pt-32 sm:pt-36" id="home">
+<div class="pointer-events-none absolute left-[-10rem] top-32 h-72 w-72 rounded-full bg-cyan-400/10 blur-3xl"></div>
+<div class="pointer-events-none absolute right-[-8rem] top-20 h-80 w-80 rounded-full bg-violet-500/10 blur-3xl"></div>
+<div class="section-shell grid items-center gap-12 lg:grid-cols-[1.08fr_.92fr] lg:gap-10">
+<div class="relative z-10 text-center lg:text-left">
+<div class="reveal mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/[.07] px-3 py-2 text-xs font-semibold text-emerald-500 dark:text-emerald-300">
+<span class="status-dot h-2 w-2 rounded-full bg-emerald-400"></span><span data-i18n="availability">Available for freelance &amp; collaboration</span></div>
+<h1 class="reveal font-display text-4xl font-bold leading-[1.08] tracking-[-.045em] sm:text-5xl md:text-6xl xl:text-[72px]" data-i18n-html="heroTitle">
+            Building digital products that feel
+            <span class="gradient-text">fast, clear, and reliable.</span>
+</h1>
+<p class="reveal mx-auto mt-6 max-w-2xl text-base leading-8 text-muted sm:text-lg lg:mx-0" data-i18n-html="heroBio">
+            Hi, saya <strong class="font-semibold text-[var(--text)]">Fajar Cahyadiputra</strong>, seorang Backend Developer dengan pengalaman 5 tahun dalam membangun API, layanan terdistribusi, dan sistem backend yang scalable, reliable, serta mudah dipelihara.
+          </p>
+<div class="reveal mt-8 flex flex-col justify-center gap-3 min-[421px]:flex-row lg:justify-start">
+<a class="btn-primary" href="#projects"><span data-i18n="viewProjects">View Projects</span><svg aria-hidden="true" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="m9 18 6-6-6-6"></path></svg>
+</a>
+<a class="btn-secondary" href="#contact"><span data-i18n="contactMe">Contact Me</span><svg aria-hidden="true" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"></path></svg>
+</a>
+</div>
+<div class="reveal mt-9 flex flex-wrap items-center justify-center gap-x-7 gap-y-3 text-sm text-muted lg:justify-start">
+<span class="flex items-center gap-2"><svg class="h-4 w-4 text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></svg><span data-i18n="cleanArchitecture">Clean architecture</span></span>
+<span class="flex items-center gap-2"><svg class="h-4 w-4 text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></svg><span data-i18n="businessFocused">Business-focused</span></span>
+<span class="flex items-center gap-2"><svg class="h-4 w-4 text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></svg><span data-i18n="productionReady">Production ready</span></span>
+</div>
+</div>
+<div class="reveal relative lg:pl-4">
+<div class="hero-orbit">
+<div class="absolute inset-[15%] z-10 overflow-hidden rounded-[35%] border border-white/15 bg-gradient-to-br from-slate-800 via-slate-900 to-black shadow-premium">
+<!-- Editable developer avatar illustration -->
+<svg aria-label="Ilustrasi programmer Fajar Cahyadiputra" class="h-full w-full" data-i18n-aria="avatarLabel" role="img" viewbox="0 0 500 500">
+<defs>
+<lineargradient id="avatarBg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#101c36"></stop><stop offset=".5" stop-color="#11152a"></stop><stop offset="1" stop-color="#090b14"></stop></lineargradient>
+<lineargradient id="hoodie" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#22d3ee"></stop><stop offset=".45" stop-color="#3b82f6"></stop><stop offset="1" stop-color="#8b5cf6"></stop></lineargradient>
+<radialgradient id="halo"><stop stop-color="#60a5fa" stop-opacity=".44"></stop><stop offset="1" stop-color="#60a5fa" stop-opacity="0"></stop></radialgradient>
+</defs>
+<rect fill="url(#avatarBg)" height="500" width="500"></rect>
+<circle cx="250" cy="205" fill="url(#halo)" r="180"></circle>
+<path d="M45 420c38-98 111-142 205-142s167 44 205 142v80H45Z" fill="url(#hoodie)" opacity=".92"></path>
+<path d="M156 499c10-108 24-170 94-194 70 24 84 86 94 194Z" fill="#101827" opacity=".94"></path>
+<ellipse cx="250" cy="213" fill="#cf9274" rx="93" ry="113"></ellipse>
+<path d="M161 207c-7-93 35-140 91-140 61 0 101 45 91 140-19-31-45-46-79-45-36 1-66 17-103 45Z" fill="#0b0e18"></path>
+<path d="M172 148c21-73 130-88 168-7-43-19-110-22-168 7Z" fill="#141925"></path>
+<path d="M173 234c8 89 50 130 77 130 33 0 73-46 78-130-13 58-44 86-78 86s-63-26-77-86Z" fill="#bd765d" opacity=".26"></path>
+<ellipse cx="213" cy="219" fill="#111827" rx="8" ry="5"></ellipse><ellipse cx="289" cy="219" fill="#111827" rx="8" ry="5"></ellipse>
+<path d="M222 268c16 12 40 12 56 0" fill="none" stroke="#7e4039" stroke-linecap="round" stroke-width="7"></path>
+<path d="M194 196c12-7 26-8 39-2M271 194c13-6 26-5 38 2" fill="none" stroke="#171923" stroke-linecap="round" stroke-width="7"></path>
+<path d="M248 218c-5 14-8 27-3 35 5 5 12 5 18 1" fill="none" stroke="#a45d4d" stroke-linecap="round" stroke-width="5"></path>
+<path d="M178 173c-22 10-27 41-16 64 6 13 17 20 29 17M322 173c22 10 27 41 16 64-6 13-17 20-29 17" fill="#c78369"></path>
+<g opacity=".88">
+<rect fill="#080c15" height="96" rx="18" stroke="#67e8f9" stroke-opacity=".28" width="340" x="80" y="390"></rect>
+<rect fill="#111827" height="48" rx="8" width="296" x="102" y="410"></rect>
+<path d="m138 434 18-13m-18 13 18 13M362 421l-18 26M207 444h75" fill="none" stroke="#67e8f9" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+</g>
+</svg>
+</div>
+<div class="float glass absolute left-[-2%] top-[18%] z-20 flex items-center gap-3 rounded-2xl px-3 py-2.5 shadow-glow sm:left-0 sm:px-4">
+<span class="grid h-9 w-9 place-items-center rounded-xl bg-cyan-400/10 text-cyan-400">
+<svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="m8 9-3 3 3 3M16 9l3 3-3 3M14 5l-4 14"></path></svg>
+</span>
+<div><p class="text-[10px] font-semibold uppercase tracking-widest text-muted" data-i18n="mainStack">Main stack</p><p class="font-display text-xs font-bold sm:text-sm">Go · Node.js · PHP</p></div>
+</div>
+<div class="float-delay glass absolute bottom-[18%] right-[-2%] z-20 flex items-center gap-3 rounded-2xl px-3 py-2.5 sm:right-0 sm:px-4">
+<span class="grid h-9 w-9 place-items-center rounded-xl bg-violet-400/10 text-violet-400">
+<svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4"></path></svg>
+</span>
+<div><p class="text-[10px] font-semibold uppercase tracking-widest text-muted" data-i18n="focus">Focus</p><p class="font-display text-xs font-bold sm:text-sm">Backend Systems</p></div>
+</div>
+</div>
+</div>
+</div>
+<a aria-label="Scroll ke bagian About" class="absolute bottom-6 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-[10px] font-semibold uppercase tracking-[.24em] text-muted md:flex" data-i18n="scroll" data-i18n-aria="scrollAbout" href="#about">
+        Scroll
+        <span class="flex h-8 w-5 justify-center rounded-full border border-black/15 p-1 dark:border-white/15"><span class="h-1.5 w-1.5 animate-bounce rounded-full bg-cyan-400"></span></span>
+</a>
+</section>
+<!-- About -->
+<section class="py-24 sm:py-28" id="about">
+<div class="section-shell">
+<div class="reveal max-w-3xl">
+<span class="section-label" data-i18n="aboutLabel">About me</span>
+<h2 class="mt-5 font-display text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl" data-i18n-html="aboutTitle">Backend developer yang membangun <span class="gradient-text">sistem andal dan scalable.</span></h2>
+<p class="mt-5 text-base leading-8 text-muted sm:text-lg" data-i18n="aboutIntro">Selama 5 tahun, saya berfokus pada pengembangan backend—mulai dari perancangan arsitektur, pembuatan REST API, pengelolaan database, integrasi message broker, hingga deployment menggunakan container orchestration.</p>
+</div>
+<div class="mt-12 grid gap-6 lg:grid-cols-[1.15fr_.85fr]">
+<article class="reveal glass rounded-[28px] p-6 sm:p-8">
+<div class="flex flex-col gap-7 sm:flex-row sm:items-start">
+<div class="grid h-16 w-16 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-cyan-400/20 via-blue-500/15 to-violet-500/20 text-cyan-400">
+<svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><path d="M8 9 5 12l3 3M16 9l3 3-3 3M14 5l-4 14"></path></svg>
+</div>
+<div>
+<h3 class="font-display text-2xl font-bold" data-i18n="architectureToProduction">From architecture to production.</h3>
+<p class="mt-4 leading-8 text-muted" data-i18n="aboutDetail">Saya terbiasa menerjemahkan proses bisnis menjadi service yang maintainable, aman, dan terukur. Pengalaman saya mencakup pengembangan monolith maupun microservices, optimasi database, asynchronous processing, observability, serta deployment aplikasi ke environment produksi.</p>
+<div class="mt-6 flex flex-wrap gap-2">
+<span class="rounded-full border border-cyan-400/20 bg-cyan-400/[.07] px-3 py-1.5 text-xs font-semibold text-cyan-500 dark:text-cyan-300">Backend Architecture</span>
+<span class="rounded-full border border-blue-400/20 bg-blue-400/[.07] px-3 py-1.5 text-xs font-semibold text-blue-500 dark:text-blue-300">API Development</span>
+<span class="rounded-full border border-violet-400/20 bg-violet-400/[.07] px-3 py-1.5 text-xs font-semibold text-violet-500 dark:text-violet-300">Distributed Systems</span>
+</div>
+</div>
+</div>
+</article>
+<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-2">
+<div class="reveal stat-card glass rounded-3xl p-5 sm:p-6"><strong class="font-display text-3xl font-bold gradient-text">20+</strong><p class="mt-2 text-sm leading-6 text-muted" data-i18n="projectsCompleted">Projects completed</p></div>
+<div class="reveal stat-card glass rounded-3xl p-5 sm:p-6"><strong class="font-display text-3xl font-bold gradient-text">5+</strong><p class="mt-2 text-sm leading-6 text-muted" data-i18n="yearsExperience">Years experience</p></div>
+<div class="reveal stat-card glass rounded-3xl p-5 sm:p-6"><strong class="font-display text-3xl font-bold gradient-text">25+</strong><p class="mt-2 text-sm leading-6 text-muted" data-i18n="technologiesUsed">Technologies used</p></div>
+<div class="reveal stat-card glass rounded-3xl p-5 sm:p-6"><strong class="font-display text-3xl font-bold gradient-text">100%</strong><p class="mt-2 text-sm leading-6 text-muted" data-i18n="commitmentQuality">Commitment to quality</p></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills -->
+<section class="py-24 sm:py-28" id="skills">
+<div class="section-shell">
+<div class="reveal mx-auto max-w-3xl text-center">
+<span class="section-label" data-i18n="techStackLabel">Tech stack</span>
+<h2 class="mt-5 font-display text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl" data-i18n-html="skillsTitle">Teknologi yang saya gunakan untuk <span class="gradient-text">membangun backend.</span></h2>
+<p class="mt-5 leading-8 text-muted" data-i18n="skillsIntro">Tech stack disusun berdasarkan area penggunaan agar kemampuan backend, data, messaging, arsitektur, dan deployment lebih mudah dipahami.</p>
+</div>
+<div class="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+<!-- Backend Languages & Runtime -->
+<article class="reveal skill-card glass rounded-[26px] p-5 sm:p-6">
+<div class="flex items-center gap-4">
+<span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-cyan-400/10 font-display text-sm font-bold text-cyan-500">&lt;/&gt;</span>
+<div><p class="text-xs font-semibold uppercase tracking-[.16em] text-cyan-500 dark:text-cyan-300" data-i18n="coreBackend">Core backend</p><h3 class="mt-1 font-display text-lg font-bold" data-i18n="languagesRuntime">Languages &amp; Runtime</h3></div>
+</div>
+<p class="mt-4 text-sm leading-7 text-muted" data-i18n="coreBackendDesc">Teknologi utama untuk membangun service, API, worker, dan proses backend.</p>
+<div class="mt-5 flex flex-wrap gap-2">
+<span class="rounded-full border border-cyan-400/20 bg-cyan-400/[.07] px-3 py-1.5 text-xs font-semibold">Go</span>
+<span class="rounded-full border border-cyan-400/20 bg-cyan-400/[.07] px-3 py-1.5 text-xs font-semibold">PHP</span>
+<span class="rounded-full border border-cyan-400/20 bg-cyan-400/[.07] px-3 py-1.5 text-xs font-semibold">Node.js</span>
+<span class="rounded-full border border-cyan-400/20 bg-cyan-400/[.07] px-3 py-1.5 text-xs font-semibold">JavaScript</span>
+<span class="rounded-full border border-cyan-400/20 bg-cyan-400/[.07] px-3 py-1.5 text-xs font-semibold">TypeScript</span>
+</div>
+</article>
+<!-- Node.js ecosystem -->
+<article class="reveal skill-card glass rounded-[26px] p-5 sm:p-6">
+<div class="flex items-center gap-4">
+<span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-emerald-400/10 font-display text-sm font-bold text-emerald-500">NODE</span>
+<div><p class="text-xs font-semibold uppercase tracking-[.16em] text-emerald-500 dark:text-emerald-300" data-i18n="nodeEcosystem">Node.js ecosystem</p><h3 class="mt-1 font-display text-lg font-bold">Frameworks</h3></div>
+</div>
+<p class="mt-4 text-sm leading-7 text-muted" data-i18n="nodeFrameworkDesc">Framework untuk API modular, enterprise service, dan aplikasi berbasis event.</p>
+<div class="mt-5 flex flex-wrap gap-2">
+<span class="rounded-full border border-emerald-400/20 bg-emerald-400/[.07] px-3 py-1.5 text-xs font-semibold">NestJS</span>
+<span class="rounded-full border border-emerald-400/20 bg-emerald-400/[.07] px-3 py-1.5 text-xs font-semibold">Express.js</span>
+<span class="rounded-full border border-emerald-400/20 bg-emerald-400/[.07] px-3 py-1.5 text-xs font-semibold">hapi</span>
+</div>
+</article>
+<!-- Go ecosystem -->
+<article class="reveal skill-card glass rounded-[26px] p-5 sm:p-6">
+<div class="flex items-center gap-4">
+<span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-sky-400/10 font-display text-sm font-bold text-sky-500">GO</span>
+<div><p class="text-xs font-semibold uppercase tracking-[.16em] text-sky-500 dark:text-sky-300" data-i18n="goEcosystem">Go ecosystem</p><h3 class="mt-1 font-display text-lg font-bold">Web Frameworks</h3></div>
+</div>
+<p class="mt-4 text-sm leading-7 text-muted" data-i18n="goFrameworkDesc">Framework ringan dan cepat untuk REST API, microservices, dan high-throughput services.</p>
+<div class="mt-5 flex flex-wrap gap-2">
+<span class="rounded-full border border-sky-400/20 bg-sky-400/[.07] px-3 py-1.5 text-xs font-semibold">Gin</span>
+<span class="rounded-full border border-sky-400/20 bg-sky-400/[.07] px-3 py-1.5 text-xs font-semibold">Beego</span>
+<span class="rounded-full border border-sky-400/20 bg-sky-400/[.07] px-3 py-1.5 text-xs font-semibold">Echo</span>
+<span class="rounded-full border border-sky-400/20 bg-sky-400/[.07] px-3 py-1.5 text-xs font-semibold">Fiber</span>
+</div>
+</article>
+<!-- PHP ecosystem -->
+<article class="reveal skill-card glass rounded-[26px] p-5 sm:p-6">
+<div class="flex items-center gap-4">
+<span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-violet-400/10 font-display text-sm font-bold text-violet-500">PHP</span>
+<div><p class="text-xs font-semibold uppercase tracking-[.16em] text-violet-500 dark:text-violet-300" data-i18n="phpEcosystem">PHP ecosystem</p><h3 class="mt-1 font-display text-lg font-bold">Web Frameworks</h3></div>
+</div>
+<p class="mt-4 text-sm leading-7 text-muted" data-i18n="phpFrameworkDesc">Framework produktif untuk aplikasi bisnis, API, dan sistem internal.</p>
+<div class="mt-5 flex flex-wrap gap-2">
+<span class="rounded-full border border-violet-400/20 bg-violet-400/[.07] px-3 py-1.5 text-xs font-semibold">Laravel</span>
+<span class="rounded-full border border-violet-400/20 bg-violet-400/[.07] px-3 py-1.5 text-xs font-semibold">CodeIgniter</span>
+</div>
+</article>
+<!-- Databases -->
+<article class="reveal skill-card glass rounded-[26px] p-5 sm:p-6">
+<div class="flex items-center gap-4">
+<span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-blue-400/10 text-blue-500">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"></path></svg>
+</span>
+<div><p class="text-xs font-semibold uppercase tracking-[.16em] text-blue-500 dark:text-blue-300" data-i18n="dataLayer">Data layer</p><h3 class="mt-1 font-display text-lg font-bold" data-i18n="databaseCache">Database &amp; Cache</h3></div>
+</div>
+<p class="mt-4 text-sm leading-7 text-muted" data-i18n="databaseDesc">Relational database, document database, caching, session, dan high-speed data access.</p>
+<div class="mt-5 flex flex-wrap gap-2">
+<span class="rounded-full border border-blue-400/20 bg-blue-400/[.07] px-3 py-1.5 text-xs font-semibold">PostgreSQL</span>
+<span class="rounded-full border border-blue-400/20 bg-blue-400/[.07] px-3 py-1.5 text-xs font-semibold">MySQL</span>
+<span class="rounded-full border border-blue-400/20 bg-blue-400/[.07] px-3 py-1.5 text-xs font-semibold">MongoDB</span>
+<span class="rounded-full border border-blue-400/20 bg-blue-400/[.07] px-3 py-1.5 text-xs font-semibold">Redis</span>
+</div>
+</article>
+<!-- Messaging -->
+<article class="reveal skill-card glass rounded-[26px] p-5 sm:p-6">
+<div class="flex items-center gap-4">
+<span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-amber-400/10 text-amber-500">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24"><path d="M4 6h16v11H8l-4 4V6Z"></path><path d="M8 10h8M8 14h5"></path></svg>
+</span>
+<div><p class="text-xs font-semibold uppercase tracking-[.16em] text-amber-500 dark:text-amber-300" data-i18n="eventDriven">Event driven</p><h3 class="mt-1 font-display text-lg font-bold" data-i18n="messagingStreaming">Messaging &amp; Streaming</h3></div>
+</div>
+<p class="mt-4 text-sm leading-7 text-muted" data-i18n="messagingDesc">Asynchronous communication, event streaming, queue processing, dan service decoupling.</p>
+<div class="mt-5 flex flex-wrap gap-2">
+<span class="rounded-full border border-amber-400/20 bg-amber-400/[.07] px-3 py-1.5 text-xs font-semibold">Apache Kafka</span>
+<span class="rounded-full border border-amber-400/20 bg-amber-400/[.07] px-3 py-1.5 text-xs font-semibold">Redis Streams</span>
+<span class="rounded-full border border-amber-400/20 bg-amber-400/[.07] px-3 py-1.5 text-xs font-semibold">NATS Streaming</span>
+<span class="rounded-full border border-amber-400/20 bg-amber-400/[.07] px-3 py-1.5 text-xs font-semibold">RabbitMQ</span>
+</div>
+</article>
+<!-- Architecture -->
+<article class="reveal skill-card glass rounded-[26px] p-5 sm:p-6 md:col-span-2 xl:col-span-1">
+<div class="flex items-center gap-4">
+<span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-fuchsia-400/10 text-fuchsia-500">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24"><rect height="7" rx="1" width="7" x="3" y="3"></rect><rect height="7" rx="1" width="7" x="14" y="3"></rect><rect height="7" rx="1" width="7" x="8.5" y="14"></rect><path d="M6.5 10v2h11v-2M12 12v2"></path></svg>
+</span>
+<div><p class="text-xs font-semibold uppercase tracking-[.16em] text-fuchsia-500 dark:text-fuchsia-300" data-i18n="systemDesign">System design</p><h3 class="mt-1 font-display text-lg font-bold" data-i18n="architecture">Architecture</h3></div>
+</div>
+<p class="mt-4 text-sm leading-7 text-muted">Pemilihan arsitektur berdasarkan kompleksitas produk, skala tim, dan kebutuhan operasional.</p>
+<div class="mt-5 flex flex-wrap gap-2">
+<span class="rounded-full border border-fuchsia-400/20 bg-fuchsia-400/[.07] px-3 py-1.5 text-xs font-semibold">Monolith</span>
+<span class="rounded-full border border-fuchsia-400/20 bg-fuchsia-400/[.07] px-3 py-1.5 text-xs font-semibold">Microservices</span>
+<span class="rounded-full border border-fuchsia-400/20 bg-fuchsia-400/[.07] px-3 py-1.5 text-xs font-semibold">REST API</span>
+<span class="rounded-full border border-fuchsia-400/20 bg-fuchsia-400/[.07] px-3 py-1.5 text-xs font-semibold">Event-Driven</span>
+</div>
+</article>
+<!-- Infrastructure -->
+<article class="reveal skill-card glass rounded-[26px] p-5 sm:p-6 md:col-span-2 xl:col-span-2">
+<div class="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+<div class="max-w-xl">
+<div class="flex items-center gap-4">
+<span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-indigo-400/10 text-indigo-500">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24"><path d="M4 17h16M6 17V7h12v10M9 21h6"></path><path d="M9 10h6M9 13h4"></path></svg>
+</span>
+<div><p class="text-xs font-semibold uppercase tracking-[.16em] text-indigo-500 dark:text-indigo-300" data-i18n="infrastructure">Infrastructure</p><h3 class="mt-1 font-display text-lg font-bold" data-i18n="serverDeployment">Server, Container &amp; Deployment</h3></div>
+</div>
+<p class="mt-4 text-sm leading-7 text-muted" data-i18n="infrastructureDesc">Menjalankan dan mengelola aplikasi backend pada server Linux maupun Windows dengan containerized deployment.</p>
+</div>
+<div class="flex flex-wrap gap-2 lg:max-w-sm lg:justify-end">
+<span class="rounded-full border border-indigo-400/20 bg-indigo-400/[.07] px-3 py-1.5 text-xs font-semibold">Ubuntu Linux</span>
+<span class="rounded-full border border-indigo-400/20 bg-indigo-400/[.07] px-3 py-1.5 text-xs font-semibold">Windows Server</span>
+<span class="rounded-full border border-indigo-400/20 bg-indigo-400/[.07] px-3 py-1.5 text-xs font-semibold">Docker</span>
+<span class="rounded-full border border-indigo-400/20 bg-indigo-400/[.07] px-3 py-1.5 text-xs font-semibold">Kubernetes</span>
+<span class="rounded-full border border-indigo-400/20 bg-indigo-400/[.07] px-3 py-1.5 text-xs font-semibold">Git</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Projects -->
+<section class="py-24 sm:py-28" id="projects">
+<div class="section-shell">
+<div class="reveal flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+<div class="max-w-3xl">
+<span class="section-label" data-i18n="selectedWork">Selected work</span>
+<h2 class="mt-5 font-display text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl" data-i18n-html="projectsTitle">Project yang menunjukkan <span class="gradient-text">cara saya bekerja.</span></h2>
+</div>
+<a class="group inline-flex items-center gap-2 font-semibold text-cyan-500 dark:text-cyan-300" href="https://github.com/fajarcahyadiputra3" rel="noopener noreferrer" target="_blank"><span data-i18n="viewGithub">View GitHub</span><svg class="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></a>
+</div>
+<div class="mt-12 grid gap-6 lg:grid-cols-3">
+<article class="reveal project-card glass overflow-hidden rounded-[28px]">
+<div class="project-gallery bg-gradient-to-br from-cyan-500/30 via-blue-600/20 to-slate-950" data-current-index="0" data-project-title="Order Analytics System">
+<div class="project-track"><button class="project-slide" data-slide-title="Dashboard Overview" type="button">
+<div class="project-shot"><svg aria-label="Dashboard Overview" class="project-shot-image" role="img" viewbox="0 0 720 450" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#111827" height="450" rx="30" width="720"></rect>
+<rect fill="#0b1220" height="414" rx="24" stroke="#334155" width="684" x="18" y="18"></rect>
+<circle cx="48" cy="47" fill="#fb7185" r="6"></circle><circle cx="68" cy="47" fill="#fbbf24" r="6"></circle><circle cx="88" cy="47" fill="#34d399" r="6"></circle>
+<rect fill="#1e293b" height="16" rx="8" width="180" x="112" y="39"></rect>
+<rect fill="#334155" height="1" width="684" x="18" y="72"></rect>
+<text fill="#e2e8f0" font-family="Inter,Arial" font-size="19" font-weight="700" x="42" y="105">Dashboard Overview</text>
+<rect fill="#111c2f" height="278" rx="18" width="132" x="42" y="125"></rect>
+<rect fill="#164e63" height="34" rx="10" width="100" x="58" y="147"></rect><rect fill="#67e8f9" height="8" rx="4" width="54" x="70" y="159"></rect>
+<rect fill="#334155" height="9" rx="4.5" width="82" x="58" y="199"></rect><rect fill="#334155" height="9" rx="4.5" width="96" x="58" y="224"></rect><rect fill="#334155" height="9" rx="4.5" width="72" x="58" y="249"></rect>
+<rect fill="#13213a" height="74" rx="16" width="146" x="194" y="125"></rect><text fill="#94a3b8" font-family="Inter,Arial" font-size="11" x="212" y="151">TOTAL ORDERS</text><text fill="#f8fafc" font-family="Inter,Arial" font-size="24" font-weight="700" x="212" y="180">12,480</text>
+<rect fill="#18233f" height="74" rx="16" width="146" x="354" y="125"></rect><text fill="#94a3b8" font-family="Inter,Arial" font-size="11" x="372" y="151">REVENUE</text><text fill="#f8fafc" font-family="Inter,Arial" font-size="24" font-weight="700" x="372" y="180">$84.2K</text>
+<rect fill="#211d42" height="74" rx="16" width="164" x="514" y="125"></rect><text fill="#94a3b8" font-family="Inter,Arial" font-size="11" x="532" y="151">SUCCESS RATE</text><text fill="#f8fafc" font-family="Inter,Arial" font-size="24" font-weight="700" x="532" y="180">98.7%</text>
+<rect fill="#111827" height="187" rx="18" stroke="#1e293b" width="484" x="194" y="216"></rect>
+<text fill="#cbd5e1" font-family="Inter,Arial" font-size="13" font-weight="600" x="216" y="246">Revenue performance</text>
+<path d="M218 359 C270 340 286 365 332 322 S410 340 452 286 S535 308 574 258 S636 275 656 235" fill="none" stroke="#22d3ee" stroke-linecap="round" stroke-width="5"></path>
+<path d="M218 359 C270 340 286 365 332 322 S410 340 452 286 S535 308 574 258 S636 275 656 235 L656 382 L218 382Z" fill="#22d3ee" opacity=".08"></path>
+<g fill="#334155"><rect height="1" width="438" x="218" y="376"></rect><rect height="1" width="438" x="218" y="331"></rect><rect height="1" width="438" x="218" y="286"></rect></g>
+</svg></div>
+<span class="slide-caption">Dashboard Overview</span>
+<span class="zoom-hint"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5M11 8v6M8 11h6"></path></svg><span data-i18n="clickToEnlarge">Perbesar</span></span>
+</button><button class="project-slide" data-slide-title="Orders Management" type="button">
+<div class="project-shot"><svg aria-label="Orders Management" class="project-shot-image" role="img" viewbox="0 0 720 450" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#111827" height="450" rx="30" width="720"></rect>
+<rect fill="#0b1220" height="414" rx="24" stroke="#334155" width="684" x="18" y="18"></rect>
+<circle cx="48" cy="47" fill="#fb7185" r="6"></circle><circle cx="68" cy="47" fill="#fbbf24" r="6"></circle><circle cx="88" cy="47" fill="#34d399" r="6"></circle>
+<rect fill="#1e293b" height="16" rx="8" width="180" x="112" y="39"></rect>
+<rect fill="#334155" height="1" width="684" x="18" y="72"></rect>
+<text fill="#e2e8f0" font-family="Inter,Arial" font-size="19" font-weight="700" x="42" y="105">Orders Management</text>
+<rect fill="#101827" height="278" rx="18" stroke="#1e293b" width="636" x="42" y="125"></rect>
+<rect fill="#172033" height="36" rx="10" width="250" x="62" y="145"></rect><circle cx="82" cy="163" fill="none" r="7" stroke="#64748b" stroke-width="2"></circle><path d="M87 168l7 7" stroke="#64748b" stroke-width="2"></path>
+<rect fill="#155e75" height="36" rx="10" width="108" x="550" y="145"></rect><text fill="#cffafe" font-family="Inter,Arial" font-size="12" font-weight="700" x="575" y="168">NEW ORDER</text>
+<g fill="#94a3b8" font-family="Inter,Arial" font-size="11"><text x="65" y="213">ORDER ID</text><text x="185" y="213">CUSTOMER</text><text x="345" y="213">AMOUNT</text><text x="450" y="213">STATUS</text><text x="585" y="213">DATE</text></g>
+<g fill="#1e293b"><rect height="1" width="596" x="62" y="226"></rect><rect height="1" width="596" x="62" y="270"></rect><rect height="1" width="596" x="62" y="314"></rect><rect height="1" width="596" x="62" y="358"></rect></g>
+<g fill="#e2e8f0" font-family="Inter,Arial" font-size="12"><text x="65" y="254">#ORD-1048</text><text x="185" y="254">Alya Putri</text><text x="345" y="254">$1,240</text><text x="585" y="254">Jun 22</text><text x="65" y="298">#ORD-1047</text><text x="185" y="298">Bima S.</text><text x="345" y="298">$840</text><text x="585" y="298">Jun 22</text><text x="65" y="342">#ORD-1046</text><text x="185" y="342">Citra Dewi</text><text x="345" y="342">$2,180</text><text x="585" y="342">Jun 21</text><text x="65" y="386">#ORD-1045</text><text x="185" y="386">Danu R.</text><text x="345" y="386">$620</text><text x="585" y="386">Jun 21</text></g>
+<g font-family="Inter,Arial" font-size="10" font-weight="700"><rect fill="#064e3b" height="23" rx="11.5" width="76" x="445" y="237"></rect><text fill="#6ee7b7" x="462" y="252">PAID</text><rect fill="#78350f" height="23" rx="11.5" width="76" x="445" y="281"></rect><text fill="#fcd34d" x="458" y="296">PENDING</text><rect fill="#064e3b" height="23" rx="11.5" width="76" x="445" y="325"></rect><text fill="#6ee7b7" x="462" y="340">PAID</text><rect fill="#3f1d2e" height="23" rx="11.5" width="76" x="445" y="369"></rect><text fill="#fda4af" x="459" y="384">FAILED</text></g>
+</svg></div>
+<span class="slide-caption">Orders Management</span>
+<span class="zoom-hint"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5M11 8v6M8 11h6"></path></svg><span data-i18n="clickToEnlarge">Perbesar</span></span>
+</button><button class="project-slide" data-slide-title="Reports &amp; Export" type="button">
+<div class="project-shot"><svg aria-label="Reports &amp; Export" class="project-shot-image" role="img" viewbox="0 0 720 450" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#111827" height="450" rx="30" width="720"></rect>
+<rect fill="#0b1220" height="414" rx="24" stroke="#334155" width="684" x="18" y="18"></rect>
+<circle cx="48" cy="47" fill="#fb7185" r="6"></circle><circle cx="68" cy="47" fill="#fbbf24" r="6"></circle><circle cx="88" cy="47" fill="#34d399" r="6"></circle>
+<rect fill="#1e293b" height="16" rx="8" width="180" x="112" y="39"></rect>
+<rect fill="#334155" height="1" width="684" x="18" y="72"></rect>
+<text fill="#e2e8f0" font-family="Inter,Arial" font-size="19" font-weight="700" x="42" y="105">Reports &amp; Export</text>
+<rect fill="#101827" height="278" rx="18" stroke="#1e293b" width="408" x="42" y="125"></rect>
+<text fill="#cbd5e1" font-family="Inter,Arial" font-size="13" font-weight="600" x="66" y="158">Monthly revenue</text>
+<g fill="#1e293b"><rect height="170" width="1" x="68" y="190"></rect><rect height="1" width="348" x="68" y="359"></rect></g>
+<g fill="#22d3ee"><rect height="74" opacity=".55" rx="8" width="35" x="94" y="285"></rect><rect height="121" opacity=".7" rx="8" width="35" x="151" y="238"></rect><rect height="92" opacity=".6" rx="8" width="35" x="208" y="267"></rect><rect height="156" rx="8" width="35" x="265" y="203"></rect><rect height="130" opacity=".8" rx="8" width="35" x="322" y="229"></rect><rect height="180" rx="8" width="35" x="379" y="179"></rect></g>
+<rect fill="#17172d" height="132" rx="18" width="210" x="468" y="125"></rect><circle cx="573" cy="191" fill="none" r="43" stroke="#312e81" stroke-width="16"></circle><path d="M573 148a43 43 0 1 1-38 63" fill="none" stroke="#a78bfa" stroke-linecap="round" stroke-width="16"></path><text fill="#f8fafc" font-family="Inter,Arial" font-size="18" font-weight="700" x="553" y="197">76%</text>
+<rect fill="#111827" height="130" rx="18" stroke="#1e293b" width="210" x="468" y="273"></rect><text fill="#94a3b8" font-family="Inter,Arial" font-size="11" x="490" y="306">EXPORT REPORT</text><rect fill="#164e63" height="42" rx="11" width="76" x="490" y="327"></rect><text fill="#a5f3fc" font-family="Inter,Arial" font-size="12" font-weight="700" x="514" y="353">CSV</text><rect fill="#312e81" height="42" rx="11" width="76" x="578" y="327"></rect><text fill="#c4b5fd" font-family="Inter,Arial" font-size="12" font-weight="700" x="598" y="353">XLSX</text>
+</svg></div>
+<span class="slide-caption">Reports &amp; Export</span>
+<span class="zoom-hint"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5M11 8v6M8 11h6"></path></svg><span data-i18n="clickToEnlarge">Perbesar</span></span>
+</button></div>
+<button aria-label="Gambar sebelumnya" class="gallery-control gallery-prev" data-i18n-aria="previousImage" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24"><path d="m15 18-6-6 6-6"></path></svg></button>
+<button aria-label="Gambar berikutnya" class="gallery-control gallery-next" data-i18n-aria="nextImage" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24"><path d="m9 18 6-6-6-6"></path></svg></button>
+<div class="gallery-footer"><div class="gallery-dots" role="tablist"></div><span class="gallery-count">1 / 3</span></div>
+</div>
+<div class="p-6">
+<div class="flex items-start justify-between gap-4"><div><p class="text-xs font-semibold uppercase tracking-[.18em] text-cyan-500 dark:text-cyan-300" data-i18n="saasPlatform">SaaS Platform</p><h3 class="mt-2 font-display text-xl font-bold">Order Analytics System</h3></div><svg class="project-arrow mt-1 h-5 w-5 text-muted" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"></path></svg></div>
+<p class="mt-4 text-sm leading-7 text-muted" data-i18n="projectOrderDesc">Dashboard operasional untuk memonitor order, revenue, status pembayaran, dan export laporan secara cepat.</p>
+<div class="mt-5 flex flex-wrap gap-2"><span class="rounded-full bg-cyan-400/10 px-2.5 py-1 text-[11px] font-semibold text-cyan-500">Go</span><span class="rounded-full bg-blue-400/10 px-2.5 py-1 text-[11px] font-semibold text-blue-500">PostgreSQL</span><span class="rounded-full bg-violet-400/10 px-2.5 py-1 text-[11px] font-semibold text-violet-500">Tailwind</span></div>
+<div class="mt-6 flex gap-3"><button class="demo-button btn-secondary min-h-10 flex-1 rounded-xl px-3 py-2 text-xs" data-i18n="liveDemo" type="button">Live Demo</button><a class="btn-secondary min-h-10 flex-1 rounded-xl px-3 py-2 text-xs" data-i18n="sourceCode" href="https://github.com/fajarcahyadiputra3" rel="noopener noreferrer" target="_blank">Source Code</a></div>
+</div>
+</article>
+<article class="reveal project-card glass overflow-hidden rounded-[28px]">
+<div class="project-gallery bg-gradient-to-br from-violet-500/30 via-fuchsia-600/15 to-slate-950" data-current-index="0" data-project-title="Smart Clip Generator">
+<div class="project-track"><button class="project-slide" data-slide-title="Upload &amp; Analyze" type="button">
+<div class="project-shot"><svg aria-label="Upload &amp; Analyze" class="project-shot-image" role="img" viewbox="0 0 720 450" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#111827" height="450" rx="30" width="720"></rect>
+<rect fill="#0b1220" height="414" rx="24" stroke="#334155" width="684" x="18" y="18"></rect>
+<circle cx="48" cy="47" fill="#fb7185" r="6"></circle><circle cx="68" cy="47" fill="#fbbf24" r="6"></circle><circle cx="88" cy="47" fill="#34d399" r="6"></circle>
+<rect fill="#1e293b" height="16" rx="8" width="180" x="112" y="39"></rect>
+<rect fill="#334155" height="1" width="684" x="18" y="72"></rect>
+<text fill="#e2e8f0" font-family="Inter,Arial" font-size="19" font-weight="700" x="42" y="105">Upload &amp; Analyze</text>
+<rect fill="#111827" height="250" rx="18" stroke="#334155" width="398" x="42" y="125"></rect>
+<rect fill="#090f1c" height="210" rx="14" width="358" x="62" y="145"></rect><path d="M207 218l0 64 58-32z" fill="#a78bfa" opacity=".9"></path><circle cx="236" cy="250" fill="none" opacity=".35" r="57" stroke="#8b5cf6" stroke-width="3"></circle>
+<rect fill="#14172a" height="250" rx="18" width="218" x="460" y="125"></rect>
+<rect fill="#1e1b4b" height="96" rx="16" stroke="#7c3aed" stroke-dasharray="8 8" width="168" x="485" y="153"></rect><path d="M555 186v30M540 201h30" stroke="#c4b5fd" stroke-linecap="round" stroke-width="4"></path><text fill="#c4b5fd" font-family="Inter,Arial" font-size="11" x="521" y="233">DROP VIDEO</text>
+<text fill="#94a3b8" font-family="Inter,Arial" font-size="11" x="485" y="282">LANGUAGE</text><rect fill="#20243b" height="35" rx="10" width="168" x="485" y="295"></rect><text fill="#e2e8f0" font-family="Inter,Arial" font-size="12" x="500" y="317">Bahasa Indonesia</text>
+<rect fill="#7c3aed" height="33" rx="10" width="168" x="485" y="342"></rect><text fill="white" font-family="Inter,Arial" font-size="12" font-weight="700" x="525" y="363">ANALYZE VIDEO</text>
+<rect fill="#1e293b" height="12" rx="6" width="636" x="42" y="391"></rect><rect fill="#8b5cf6" height="12" rx="6" width="420" x="42" y="391"></rect>
+</svg></div>
+<span class="slide-caption">Upload &amp; Analyze</span>
+<span class="zoom-hint"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5M11 8v6M8 11h6"></path></svg><span data-i18n="clickToEnlarge">Perbesar</span></span>
+</button><button class="project-slide" data-slide-title="AI Clip Editor" type="button">
+<div class="project-shot"><svg aria-label="AI Clip Editor" class="project-shot-image" role="img" viewbox="0 0 720 450" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#111827" height="450" rx="30" width="720"></rect>
+<rect fill="#0b1220" height="414" rx="24" stroke="#334155" width="684" x="18" y="18"></rect>
+<circle cx="48" cy="47" fill="#fb7185" r="6"></circle><circle cx="68" cy="47" fill="#fbbf24" r="6"></circle><circle cx="88" cy="47" fill="#34d399" r="6"></circle>
+<rect fill="#1e293b" height="16" rx="8" width="180" x="112" y="39"></rect>
+<rect fill="#334155" height="1" width="684" x="18" y="72"></rect>
+<text fill="#e2e8f0" font-family="Inter,Arial" font-size="19" font-weight="700" x="42" y="105">AI Clip Editor</text>
+<rect fill="#090f1c" height="200" rx="18" stroke="#334155" width="382" x="42" y="125"></rect><rect fill="#151a2d" height="164" rx="12" width="348" x="59" y="143"></rect><path d="M204 190l0 70 62-35z" fill="#22d3ee" opacity=".9"></path>
+<rect fill="#121827" height="200" rx="18" stroke="#1e293b" width="236" x="442" y="125"></rect><text fill="#cbd5e1" font-family="Inter,Arial" font-size="12" font-weight="700" x="462" y="153">AI TRANSCRIPT</text>
+<g fill="#334155"><rect height="8" rx="4" width="184" x="462" y="174"></rect><rect height="8" rx="4" width="158" x="462" y="194"></rect><rect height="8" rx="4" width="195" x="462" y="214"></rect><rect height="8" rx="4" width="138" x="462" y="234"></rect></g><rect fill="#164e63" height="43" rx="10" width="204" x="458" y="260"></rect><text fill="#a5f3fc" font-family="Inter,Arial" font-size="11" font-weight="700" x="476" y="286">VIRAL MOMENT DETECTED · 92%</text>
+<rect fill="#111827" height="60" rx="16" stroke="#1e293b" width="636" x="42" y="343"></rect><g fill="#312e81"><rect height="25" rx="6" width="74" x="65" y="361"></rect><rect height="25" rx="6" width="42" x="146" y="361"></rect><rect height="25" rx="6" width="98" x="195" y="361"></rect><rect height="25" rx="6" width="61" x="300" y="361"></rect><rect height="25" rx="6" width="112" x="368" y="361"></rect><rect height="25" rx="6" width="52" x="487" y="361"></rect><rect height="25" rx="6" width="106" x="546" y="361"></rect></g><path d="M320 348v50" stroke="#22d3ee" stroke-width="3"></path>
+</svg></div>
+<span class="slide-caption">AI Clip Editor</span>
+<span class="zoom-hint"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5M11 8v6M8 11h6"></path></svg><span data-i18n="clickToEnlarge">Perbesar</span></span>
+</button><button class="project-slide" data-slide-title="Export Presets" type="button">
+<div class="project-shot"><svg aria-label="Export Presets" class="project-shot-image" role="img" viewbox="0 0 720 450" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#111827" height="450" rx="30" width="720"></rect>
+<rect fill="#0b1220" height="414" rx="24" stroke="#334155" width="684" x="18" y="18"></rect>
+<circle cx="48" cy="47" fill="#fb7185" r="6"></circle><circle cx="68" cy="47" fill="#fbbf24" r="6"></circle><circle cx="88" cy="47" fill="#34d399" r="6"></circle>
+<rect fill="#1e293b" height="16" rx="8" width="180" x="112" y="39"></rect>
+<rect fill="#334155" height="1" width="684" x="18" y="72"></rect>
+<text fill="#e2e8f0" font-family="Inter,Arial" font-size="19" font-weight="700" x="42" y="105">Export Presets</text>
+<text fill="#94a3b8" font-family="Inter,Arial" font-size="12" x="42" y="135">SELECT OUTPUT FORMAT</text>
+<rect fill="#1e1b4b" height="180" rx="18" stroke="#8b5cf6" stroke-width="2" width="188" x="42" y="153"></rect><rect fill="#0f172a" height="118" rx="12" width="66" x="68" y="178"></rect><rect fill="#312e81" height="80" rx="7" width="48" x="77" y="188"></rect><text fill="#f8fafc" font-family="Inter,Arial" font-size="17" font-weight="700" x="151" y="211">9:16</text><text fill="#c4b5fd" font-family="Inter,Arial" font-size="11" x="151" y="235">Shorts / Reels</text><circle cx="195" cy="294" fill="#8b5cf6" r="12"></circle><path d="m189 294 4 4 8-9" fill="none" stroke="white" stroke-width="2.5"></path>
+<rect fill="#111827" height="180" rx="18" stroke="#334155" width="188" x="246" y="153"></rect><rect fill="#172554" height="82" rx="12" width="144" x="268" y="196"></rect><text fill="#94a3b8" font-family="Inter,Arial" font-size="11" x="288" y="311">16:9 · YouTube</text>
+<rect fill="#111827" height="180" rx="18" stroke="#334155" width="228" x="450" y="153"></rect><text fill="#cbd5e1" font-family="Inter,Arial" font-size="12" font-weight="700" x="473" y="185">EXPORT SETTINGS</text><text fill="#64748b" font-family="Inter,Arial" font-size="10" x="473" y="218">QUALITY</text><rect fill="#20243b" height="34" rx="9" width="182" x="473" y="230"></rect><text fill="#e2e8f0" font-family="Inter,Arial" font-size="11" x="489" y="251">1080p · High</text><rect fill="#7c3aed" height="34" rx="9" width="182" x="473" y="280"></rect><text fill="white" font-family="Inter,Arial" font-size="12" font-weight="700" x="518" y="301">EXPORT CLIP</text>
+<rect fill="#101827" height="48" rx="14" width="636" x="42" y="355"></rect><text fill="#94a3b8" font-family="Inter,Arial" font-size="11" x="62" y="384">3 clips ready · Estimated export time 00:42</text><rect fill="#1e293b" height="12" rx="6" width="150" x="500" y="373"></rect><rect fill="#22d3ee" height="12" rx="6" width="105" x="500" y="373"></rect>
+</svg></div>
+<span class="slide-caption">Export Presets</span>
+<span class="zoom-hint"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5M11 8v6M8 11h6"></path></svg><span data-i18n="clickToEnlarge">Perbesar</span></span>
+</button></div>
+<button aria-label="Gambar sebelumnya" class="gallery-control gallery-prev" data-i18n-aria="previousImage" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24"><path d="m15 18-6-6 6-6"></path></svg></button>
+<button aria-label="Gambar berikutnya" class="gallery-control gallery-next" data-i18n-aria="nextImage" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24"><path d="m9 18 6-6-6-6"></path></svg></button>
+<div class="gallery-footer"><div class="gallery-dots" role="tablist"></div><span class="gallery-count">1 / 3</span></div>
+</div>
+<div class="p-6">
+<div class="flex items-start justify-between gap-4"><div><p class="text-xs font-semibold uppercase tracking-[.18em] text-violet-500 dark:text-violet-300" data-i18n="contentTool">Content Tool</p><h3 class="mt-2 font-display text-xl font-bold">Smart Clip Generator</h3></div><svg class="project-arrow mt-1 h-5 w-5 text-muted" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"></path></svg></div>
+<p class="mt-4 text-sm leading-7 text-muted" data-i18n="projectClipDesc">Workflow otomatis untuk mengubah video panjang menjadi potongan konten singkat yang siap dipublikasikan.</p>
+<div class="mt-5 flex flex-wrap gap-2"><span class="rounded-full bg-red-400/10 px-2.5 py-1 text-[11px] font-semibold text-red-500">Laravel</span><span class="rounded-full bg-yellow-400/10 px-2.5 py-1 text-[11px] font-semibold text-yellow-600">JavaScript</span><span class="rounded-full bg-blue-400/10 px-2.5 py-1 text-[11px] font-semibold text-blue-500">MySQL</span></div>
+<div class="mt-6 flex gap-3"><button class="demo-button btn-secondary min-h-10 flex-1 rounded-xl px-3 py-2 text-xs" data-i18n="liveDemo" type="button">Live Demo</button><a class="btn-secondary min-h-10 flex-1 rounded-xl px-3 py-2 text-xs" data-i18n="sourceCode" href="https://github.com/fajarcahyadiputra3" rel="noopener noreferrer" target="_blank">Source Code</a></div>
+</div>
+</article>
+<article class="reveal project-card glass overflow-hidden rounded-[28px]">
+<div class="project-gallery bg-gradient-to-br from-blue-500/30 via-cyan-600/15 to-slate-950" data-current-index="0" data-project-title="Service Booking API">
+<div class="project-track"><button class="project-slide" data-slide-title="Booking Calendar" type="button">
+<div class="project-shot"><svg aria-label="Booking Calendar" class="project-shot-image" role="img" viewbox="0 0 720 450" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#111827" height="450" rx="30" width="720"></rect>
+<rect fill="#0b1220" height="414" rx="24" stroke="#334155" width="684" x="18" y="18"></rect>
+<circle cx="48" cy="47" fill="#fb7185" r="6"></circle><circle cx="68" cy="47" fill="#fbbf24" r="6"></circle><circle cx="88" cy="47" fill="#34d399" r="6"></circle>
+<rect fill="#1e293b" height="16" rx="8" width="180" x="112" y="39"></rect>
+<rect fill="#334155" height="1" width="684" x="18" y="72"></rect>
+<text fill="#e2e8f0" font-family="Inter,Arial" font-size="19" font-weight="700" x="42" y="105">Booking Calendar</text>
+<rect fill="#101827" height="278" rx="18" stroke="#1e293b" width="460" x="42" y="125"></rect><text fill="#e2e8f0" font-family="Inter,Arial" font-size="14" font-weight="700" x="66" y="158">June 2026</text><text fill="#67e8f9" font-family="Inter,Arial" font-size="11" x="418" y="158">TODAY</text>
+<g fill="#64748b" font-family="Inter,Arial" font-size="10"><text x="72" y="192">MON</text><text x="132" y="192">TUE</text><text x="192" y="192">WED</text><text x="252" y="192">THU</text><text x="312" y="192">FRI</text><text x="372" y="192">SAT</text><text x="432" y="192">SUN</text></g>
+<g fill="#172033"><rect height="42" rx="10" width="42" x="65" y="207"></rect><rect height="42" rx="10" width="42" x="125" y="207"></rect><rect height="42" rx="10" width="42" x="185" y="207"></rect><rect fill="#155e75" height="42" rx="10" width="42" x="245" y="207"></rect><rect height="42" rx="10" width="42" x="305" y="207"></rect><rect height="42" rx="10" width="42" x="365" y="207"></rect><rect height="42" rx="10" width="42" x="425" y="207"></rect><rect height="42" rx="10" width="42" x="65" y="262"></rect><rect height="42" rx="10" width="42" x="125" y="262"></rect><rect height="42" rx="10" width="42" x="185" y="262"></rect><rect height="42" rx="10" width="42" x="245" y="262"></rect><rect height="42" rx="10" width="42" x="305" y="262"></rect><rect height="42" rx="10" width="42" x="365" y="262"></rect><rect height="42" rx="10" width="42" x="425" y="262"></rect><rect height="42" rx="10" width="42" x="65" y="317"></rect><rect height="42" rx="10" width="42" x="125" y="317"></rect><rect height="42" rx="10" width="42" x="185" y="317"></rect><rect height="42" rx="10" width="42" x="245" y="317"></rect><rect height="42" rx="10" width="42" x="305" y="317"></rect><rect height="42" rx="10" width="42" x="365" y="317"></rect><rect height="42" rx="10" width="42" x="425" y="317"></rect></g>
+<g fill="#cbd5e1" font-family="Inter,Arial" font-size="11"><text x="82" y="233">1</text><text x="142" y="233">2</text><text x="202" y="233">3</text><text fill="#cffafe" font-weight="700" x="262" y="233">4</text><text x="322" y="233">5</text><text x="382" y="233">6</text><text x="442" y="233">7</text></g>
+<rect fill="#13213a" height="278" rx="18" width="158" x="520" y="125"></rect><text fill="#cbd5e1" font-family="Inter,Arial" font-size="12" font-weight="700" x="541" y="158">UPCOMING</text><rect fill="#172554" height="76" rx="12" width="118" x="540" y="180"></rect><text fill="#93c5fd" font-family="Inter,Arial" font-size="10" x="554" y="204">09:30</text><text fill="#f8fafc" font-family="Inter,Arial" font-size="11" font-weight="700" x="554" y="227">Consultation</text><text fill="#94a3b8" font-family="Inter,Arial" font-size="9" x="554" y="245">Alya Putri</text><rect fill="#164e63" height="76" rx="12" width="118" x="540" y="270"></rect><text fill="#67e8f9" font-family="Inter,Arial" font-size="10" x="554" y="294">13:00</text><text fill="#f8fafc" font-family="Inter,Arial" font-size="11" font-weight="700" x="554" y="317">Technical Call</text><text fill="#94a3b8" font-family="Inter,Arial" font-size="9" x="554" y="335">PT Nusantara</text>
+</svg></div>
+<span class="slide-caption">Booking Calendar</span>
+<span class="zoom-hint"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5M11 8v6M8 11h6"></path></svg><span data-i18n="clickToEnlarge">Perbesar</span></span>
+</button><button class="project-slide" data-slide-title="Appointment Detail" type="button">
+<div class="project-shot"><svg aria-label="Appointment Detail" class="project-shot-image" role="img" viewbox="0 0 720 450" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#111827" height="450" rx="30" width="720"></rect>
+<rect fill="#0b1220" height="414" rx="24" stroke="#334155" width="684" x="18" y="18"></rect>
+<circle cx="48" cy="47" fill="#fb7185" r="6"></circle><circle cx="68" cy="47" fill="#fbbf24" r="6"></circle><circle cx="88" cy="47" fill="#34d399" r="6"></circle>
+<rect fill="#1e293b" height="16" rx="8" width="180" x="112" y="39"></rect>
+<rect fill="#334155" height="1" width="684" x="18" y="72"></rect>
+<text fill="#e2e8f0" font-family="Inter,Arial" font-size="19" font-weight="700" x="42" y="105">Appointment Detail</text>
+<rect fill="#111827" height="278" rx="18" stroke="#1e293b" width="250" x="42" y="125"></rect><circle cx="167" cy="180" fill="#155e75" r="35"></circle><text fill="#cffafe" font-family="Inter,Arial" font-size="24" font-weight="700" x="150" y="190">AP</text><text fill="#f8fafc" font-family="Inter,Arial" font-size="15" font-weight="700" x="112" y="238">Alya Putri</text><text fill="#94a3b8" font-family="Inter,Arial" font-size="10" x="101" y="260">alya@example.com</text><rect fill="#13213a" height="44" rx="12" width="196" x="69" y="288"></rect><text fill="#64748b" font-family="Inter,Arial" font-size="9" x="86" y="307">SERVICE</text><text fill="#e2e8f0" font-family="Inter,Arial" font-size="11" x="86" y="323">Backend Consultation</text><rect fill="#155e75" height="38" rx="11" width="196" x="69" y="345"></rect><text fill="#cffafe" font-family="Inter,Arial" font-size="11" font-weight="700" x="118" y="369">CONFIRMED</text>
+<rect fill="#101827" height="126" rx="18" stroke="#1e293b" width="368" x="310" y="125"></rect><text fill="#cbd5e1" font-family="Inter,Arial" font-size="12" font-weight="700" x="334" y="157">SCHEDULE</text><rect fill="#172554" height="52" rx="12" width="147" x="334" y="174"></rect><text fill="#64748b" font-family="Inter,Arial" font-size="9" x="349" y="194">DATE</text><text fill="#e2e8f0" font-family="Inter,Arial" font-size="12" x="349" y="214">June 24, 2026</text><rect fill="#164e63" height="52" rx="12" width="156" x="498" y="174"></rect><text fill="#67e8f9" font-family="Inter,Arial" font-size="9" x="513" y="194">TIME</text><text fill="#cffafe" font-family="Inter,Arial" font-size="12" x="513" y="214">09:30 — 10:30</text>
+<rect fill="#111827" height="134" rx="18" stroke="#1e293b" width="368" x="310" y="269"></rect><text fill="#cbd5e1" font-family="Inter,Arial" font-size="12" font-weight="700" x="334" y="301">STATUS TIMELINE</text><path d="M354 327h260" stroke="#334155" stroke-linecap="round" stroke-width="4"></path><circle cx="354" cy="327" fill="#22d3ee" r="9"></circle><circle cx="440" cy="327" fill="#22d3ee" r="9"></circle><circle cx="527" cy="327" fill="#22d3ee" r="9"></circle><circle cx="614" cy="327" fill="#334155" r="9"></circle><g fill="#94a3b8" font-family="Inter,Arial" font-size="9"><text x="333" y="360">Created</text><text x="418" y="360">Paid</text><text x="500" y="360">Confirmed</text><text x="592" y="360">Completed</text></g>
+</svg></div>
+<span class="slide-caption">Appointment Detail</span>
+<span class="zoom-hint"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5M11 8v6M8 11h6"></path></svg><span data-i18n="clickToEnlarge">Perbesar</span></span>
+</button><button class="project-slide" data-slide-title="API &amp; Service Metrics" type="button">
+<div class="project-shot"><svg aria-label="API &amp; Service Metrics" class="project-shot-image" role="img" viewbox="0 0 720 450" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#111827" height="450" rx="30" width="720"></rect>
+<rect fill="#0b1220" height="414" rx="24" stroke="#334155" width="684" x="18" y="18"></rect>
+<circle cx="48" cy="47" fill="#fb7185" r="6"></circle><circle cx="68" cy="47" fill="#fbbf24" r="6"></circle><circle cx="88" cy="47" fill="#34d399" r="6"></circle>
+<rect fill="#1e293b" height="16" rx="8" width="180" x="112" y="39"></rect>
+<rect fill="#334155" height="1" width="684" x="18" y="72"></rect>
+<text fill="#e2e8f0" font-family="Inter,Arial" font-size="19" font-weight="700" x="42" y="105">API &amp; Service Metrics</text>
+<rect fill="#13213a" height="74" rx="16" width="190" x="42" y="125"></rect><text fill="#94a3b8" font-family="Inter,Arial" font-size="10" x="62" y="151">REQUESTS / MIN</text><text fill="#f8fafc" font-family="Inter,Arial" font-size="25" font-weight="700" x="62" y="181">8,420</text><rect fill="#17172d" height="74" rx="16" width="190" x="248" y="125"></rect><text fill="#94a3b8" font-family="Inter,Arial" font-size="10" x="268" y="151">P95 LATENCY</text><text fill="#f8fafc" font-family="Inter,Arial" font-size="25" font-weight="700" x="268" y="181">84 ms</text><rect fill="#123128" height="74" rx="16" width="224" x="454" y="125"></rect><text fill="#94a3b8" font-family="Inter,Arial" font-size="10" x="474" y="151">UPTIME</text><text fill="#f8fafc" font-family="Inter,Arial" font-size="25" font-weight="700" x="474" y="181">99.99%</text>
+<rect fill="#101827" height="187" rx="18" stroke="#1e293b" width="408" x="42" y="216"></rect><text fill="#cbd5e1" font-family="Inter,Arial" font-size="12" font-weight="700" x="64" y="246">Traffic &amp; latency</text><path d="M64 353 C110 330 141 367 183 322 S260 349 301 295 S374 321 426 265" fill="none" stroke="#22d3ee" stroke-width="4"></path><path d="M64 364 C110 348 141 372 183 349 S260 363 301 335 S374 351 426 322" fill="none" opacity=".9" stroke="#a78bfa" stroke-width="3"></path><g fill="#334155"><rect height="1" width="362" x="64" y="375"></rect><rect height="1" width="362" x="64" y="330"></rect><rect height="1" width="362" x="64" y="285"></rect></g>
+<rect fill="#111827" height="187" rx="18" stroke="#1e293b" width="210" x="468" y="216"></rect><text fill="#cbd5e1" font-family="Inter,Arial" font-size="12" font-weight="700" x="489" y="246">TOP ENDPOINTS</text><g font-family="Inter,Arial" font-size="10"><text fill="#93c5fd" x="489" y="277">GET</text><text fill="#e2e8f0" x="526" y="277">/api/bookings</text><text fill="#86efac" x="489" y="310">POST</text><text fill="#e2e8f0" x="526" y="310">/api/orders</text><text fill="#93c5fd" x="489" y="343">GET</text><text fill="#e2e8f0" x="526" y="343">/api/slots</text></g><g fill="#334155"><rect height="1" width="168" x="489" y="289"></rect><rect height="1" width="168" x="489" y="322"></rect></g><rect fill="#064e3b" height="18" rx="9" width="168" x="489" y="365"></rect><text fill="#6ee7b7" font-family="Inter,Arial" font-size="9" font-weight="700" x="535" y="378">ALL SYSTEMS HEALTHY</text>
+</svg></div>
+<span class="slide-caption">API &amp; Service Metrics</span>
+<span class="zoom-hint"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5M11 8v6M8 11h6"></path></svg><span data-i18n="clickToEnlarge">Perbesar</span></span>
+</button></div>
+<button aria-label="Gambar sebelumnya" class="gallery-control gallery-prev" data-i18n-aria="previousImage" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24"><path d="m15 18-6-6 6-6"></path></svg></button>
+<button aria-label="Gambar berikutnya" class="gallery-control gallery-next" data-i18n-aria="nextImage" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24"><path d="m9 18 6-6-6-6"></path></svg></button>
+<div class="gallery-footer"><div class="gallery-dots" role="tablist"></div><span class="gallery-count">1 / 3</span></div>
+</div>
+<div class="p-6">
+<div class="flex items-start justify-between gap-4"><div><p class="text-xs font-semibold uppercase tracking-[.18em] text-blue-500 dark:text-blue-300" data-i18n="webApplication">Web Application</p><h3 class="mt-2 font-display text-xl font-bold">Service Booking API</h3></div><svg class="project-arrow mt-1 h-5 w-5 text-muted" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"></path></svg></div>
+<p class="mt-4 text-sm leading-7 text-muted" data-i18n="projectBookingDesc">Sistem booking berbasis REST API dengan manajemen jadwal, notifikasi, dan kontrol status layanan.</p>
+<div class="mt-5 flex flex-wrap gap-2"><span class="rounded-full bg-cyan-400/10 px-2.5 py-1 text-[11px] font-semibold text-cyan-500">Go</span><span class="rounded-full bg-violet-400/10 px-2.5 py-1 text-[11px] font-semibold text-violet-500">REST API</span><span class="rounded-full bg-blue-400/10 px-2.5 py-1 text-[11px] font-semibold text-blue-500">PostgreSQL</span></div>
+<div class="mt-6 flex gap-3"><button class="demo-button btn-secondary min-h-10 flex-1 rounded-xl px-3 py-2 text-xs" data-i18n="liveDemo" type="button">Live Demo</button><a class="btn-secondary min-h-10 flex-1 rounded-xl px-3 py-2 text-xs" data-i18n="sourceCode" href="https://github.com/fajarcahyadiputra3" rel="noopener noreferrer" target="_blank">Source Code</a></div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Experience -->
+<section class="py-24 sm:py-28" id="experience">
+<div class="section-shell grid gap-12 lg:grid-cols-[.76fr_1.24fr] lg:gap-16">
+<div class="reveal lg:sticky lg:top-28 lg:self-start">
+<span class="section-label" data-i18n="experienceLabel">Experience</span>
+<h2 class="mt-5 font-display text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl" data-i18n-html="experienceTitle">Pengalaman membangun solusi <span class="gradient-text">yang siap digunakan.</span></h2>
+<p class="mt-5 leading-8 text-muted" data-i18n="experienceIntro">Timeline ini menggunakan data dummy dan dapat langsung disesuaikan dengan pengalaman kerja asli.</p>
+<a class="mt-7 inline-flex items-center gap-2 font-semibold text-cyan-500 dark:text-cyan-300" href="#contact"><span data-i18n="discussProject">Discuss a project</span><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></a>
+</div>
+<div class="timeline-line relative space-y-6 pl-11">
+<article class="reveal timeline-card glass relative rounded-[26px] p-6 sm:p-7">
+<span class="absolute -left-[39px] top-8 grid h-7 w-7 place-items-center rounded-full border border-cyan-400/35 bg-[var(--bg)]"><span class="h-2.5 w-2.5 rounded-full bg-cyan-400 shadow-glow"></span></span>
+<div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between"><div><p class="text-xs font-semibold uppercase tracking-[.16em] text-cyan-500 dark:text-cyan-300" data-i18n="datePresent">2024 — Present</p><h3 class="mt-2 font-display text-xl font-bold">Backend Developer</h3><p class="mt-1 font-medium text-muted" data-i18n="digitalProductCompany">Digital Product Company</p></div><span class="w-fit rounded-full border border-emerald-400/20 bg-emerald-400/[.07] px-3 py-1 text-xs font-semibold text-emerald-500 dark:text-emerald-300" data-i18n="current">Current</span></div>
+<ul class="mt-5 space-y-3 text-sm leading-7 text-muted"><li class="flex gap-3"><span class="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-400"></span><span data-i18n="expBullet1">Membangun REST API dan layanan backend yang scalable menggunakan Go, Node.js, PHP, PostgreSQL, dan Redis.</span></li><li class="flex gap-3"><span class="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-400"></span><span data-i18n="expBullet2">Mengintegrasikan layanan pihak ketiga, message broker, asynchronous jobs, dan workflow berbasis event.</span></li></ul>
+</article>
+<article class="reveal timeline-card glass relative rounded-[26px] p-6 sm:p-7">
+<span class="absolute -left-[39px] top-8 grid h-7 w-7 place-items-center rounded-full border border-blue-400/35 bg-[var(--bg)]"><span class="h-2.5 w-2.5 rounded-full bg-blue-400"></span></span>
+<p class="text-xs font-semibold uppercase tracking-[.16em] text-blue-500 dark:text-blue-300">2023 — 2024</p><h3 class="mt-2 font-display text-xl font-bold">Backend Developer</h3><p class="mt-1 font-medium text-muted" data-i18n="technologyStartup">Technology Startup</p>
+<ul class="mt-5 space-y-3 text-sm leading-7 text-muted"><li class="flex gap-3"><span class="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-400"></span><span data-i18n="expBullet3">Mendesain service, database schema, autentikasi, dan proses asynchronous.</span></li><li class="flex gap-3"><span class="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-400"></span><span data-i18n="expBullet4">Meningkatkan performa query dan menjaga konsistensi kualitas kode melalui Git workflow.</span></li></ul>
+</article>
+<article class="reveal timeline-card glass relative rounded-[26px] p-6 sm:p-7">
+<span class="absolute -left-[39px] top-8 grid h-7 w-7 place-items-center rounded-full border border-violet-400/35 bg-[var(--bg)]"><span class="h-2.5 w-2.5 rounded-full bg-violet-400"></span></span>
+<p class="text-xs font-semibold uppercase tracking-[.16em] text-violet-500 dark:text-violet-300">2022 — 2023</p><h3 class="mt-2 font-display text-xl font-bold">Freelance Web Developer</h3><p class="mt-1 font-medium text-muted" data-i18n="variousClients">Various Clients</p>
+<ul class="mt-5 space-y-3 text-sm leading-7 text-muted"><li class="flex gap-3"><span class="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-violet-400"></span><span data-i18n="expBullet5">Membuat website company profile, landing page, dan sistem internal sesuai kebutuhan client.</span></li><li class="flex gap-3"><span class="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-violet-400"></span><span data-i18n="expBullet6">Mengelola komunikasi, estimasi pekerjaan, delivery, dan dukungan setelah rilis.</span></li></ul>
+</article>
+</div>
+</div>
+</section>
+<!-- Contact -->
+<section class="py-24 sm:py-28" id="contact">
+<div class="section-shell">
+<div class="reveal overflow-hidden rounded-[32px] border border-cyan-400/15 bg-gradient-to-br from-cyan-400/[.075] via-transparent to-violet-400/[.075] p-1 shadow-premium">
+<div class="glass rounded-[28px] p-6 sm:p-9 lg:p-12">
+<div class="grid gap-10 lg:grid-cols-[.86fr_1.14fr] lg:gap-14">
+<div>
+<span class="section-label" data-i18n="contactLabel">Contact</span>
+<h2 class="mt-5 font-display text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl" data-i18n-html="contactTitle">Punya ide? Mari kita <span class="gradient-text">bangun bersama.</span></h2>
+<p class="mt-5 leading-8 text-muted" data-i18n="contactIntro">Ceritakan kebutuhan project Anda. Form demo ini memvalidasi input dan dapat dihubungkan ke backend, Formspree, EmailJS, atau endpoint pilihan Anda.</p>
+<div class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
+<a class="contact-item flex items-center gap-4 rounded-2xl border border-black/10 bg-black/[.025] p-4 dark:border-white/10 dark:bg-white/[.025]" href="mailto:fajarcahyadiputra3@gmail.com"><span class="grid h-11 w-11 place-items-center rounded-xl bg-cyan-400/10 text-cyan-500"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 5h16v14H4zM4 7l8 6 8-6"></path></svg></span><span class="min-w-0"><span class="block text-xs font-semibold uppercase tracking-wider text-muted">Email</span><span class="block truncate text-sm font-semibold">fajarcahyadiputra3@gmail.com</span></span></a>
+<a class="contact-item flex items-center gap-4 rounded-2xl border border-black/10 bg-black/[.025] p-4 dark:border-white/10 dark:bg-white/[.025]" href="https://github.com/fajarcahyadiputra3" rel="noopener noreferrer" target="_blank"><span class="grid h-11 w-11 place-items-center rounded-xl bg-blue-400/10 text-blue-500"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-6 0C5.8.1 4.7.5 4.7.5A5 5 0 0 0 4.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.3 3.5 6.5 6.8 7A4.8 4.8 0 0 0 9 18v4"></path></svg></span><span><span class="block text-xs font-semibold uppercase tracking-wider text-muted">GitHub</span><span class="block text-sm font-semibold">@fajarcahyadiputra3</span></span></a>
+<a class="contact-item flex items-center gap-4 rounded-2xl border border-black/10 bg-black/[.025] p-4 dark:border-white/10 dark:bg-white/[.025]" href="https://linkedin.com/in/fajarcahyadiputra3" rel="noopener noreferrer" target="_blank"><span class="grid h-11 w-11 place-items-center rounded-xl bg-violet-400/10 text-violet-500"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V9h4v2M2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4"></path></svg></span><span><span class="block text-xs font-semibold uppercase tracking-wider text-muted">LinkedIn</span><span class="block text-sm font-semibold">Fajar Cahyadiputra</span></span></a>
+<a class="contact-item flex items-center gap-4 rounded-2xl border border-black/10 bg-black/[.025] p-4 dark:border-white/10 dark:bg-white/[.025]" href="https://wa.me/628xxxxxxxxxx" rel="noopener noreferrer" target="_blank"><span class="grid h-11 w-11 place-items-center rounded-xl bg-emerald-400/10 text-emerald-500"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 21l1.9-5.4A8.5 8.5 0 1 1 21 11.5Z"></path><path d="M8 8c.5 3 2 4.5 5 5"></path></svg></span><span><span class="block text-xs font-semibold uppercase tracking-wider text-muted">WhatsApp</span><span class="block text-sm font-semibold">+62 8xx-xxxx-xxxx</span></span></a>
+</div>
+</div>
+<form class="rounded-[26px] border border-black/10 bg-black/[.018] p-5 sm:p-7 dark:border-white/10 dark:bg-white/[.018]" id="contactForm" novalidate="">
+<div class="mb-6 flex items-start gap-4 rounded-2xl border border-cyan-400/15 bg-cyan-400/[.055] p-4">
+<span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-cyan-400/10 text-cyan-500">
+<svg aria-hidden="true" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 5h16v14H4zM4 7l8 6 8-6"></path></svg>
+</span>
+<div>
+<p class="text-sm font-semibold" data-i18n="emailDestinationTitle">Email tujuan</p>
+<p class="mt-1 break-all text-sm text-muted">fajarcahyadiputra3@gmail.com</p>
+</div>
+</div>
+<div>
+<label class="mb-2 block text-sm font-semibold" data-i18n="messageLabel" for="message">Pesan</label>
+<textarea class="form-input resize-none" data-i18n-placeholder="messagePlaceholder" id="message" maxlength="1000" name="message" placeholder="Ceritakan tentang project, tujuan, atau kebutuhan Anda..." rows="9"></textarea>
+<div class="mt-2 flex items-center justify-between gap-4">
+<p class="hidden text-xs text-rose-500" id="messageError"></p>
+<span class="ml-auto text-xs text-muted" id="charCount">0 / 1000</span>
+</div>
+</div>
+<button class="btn-primary mt-6 w-full disabled:cursor-not-allowed disabled:opacity-60" id="submitButton" type="submit">
+<span data-i18n="sendMessage" id="submitText">Kirim Pesan</span>
+<svg aria-hidden="true" class="h-4 w-4" fill="none" id="sendIcon" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"></path><path d="M22 2 11 13"></path></svg>
+<svg aria-hidden="true" class="hidden h-5 w-5 animate-spin" fill="none" id="loadingIcon" viewbox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" d="M4 12a8 8 0 0 1 8-8v4a4 4 0 0 0-4 4H4Z" fill="currentColor"></path></svg>
+</button>
+<p class="mt-4 text-center text-xs leading-5 text-muted" data-i18n="emailFormNote">Tombol ini akan membuka Gmail atau aplikasi email default Anda dengan pesan yang sudah terisi.</p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-black/10 py-8 dark:border-white/10">
+<div class="section-shell flex flex-col items-center justify-between gap-5 text-center sm:flex-row sm:text-left">
+<div><p class="font-display font-bold">Fajar<span class="text-cyan-400">.</span>dev</p><p class="mt-1 text-xs text-muted" data-i18n-html="copyright">© <span id="currentYear"></span> Fajar Cahyadiputra. All rights reserved.</p></div>
+<div class="flex items-center gap-2">
+<a aria-label="GitHub" class="grid h-10 w-10 place-items-center rounded-xl border border-black/10 text-muted transition hover:border-cyan-400/40 hover:text-cyan-400 dark:border-white/10" href="https://github.com/fajarcahyadiputra3" rel="noopener noreferrer" target="_blank"><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-6 0C5.8.1 4.7.5 4.7.5A5 5 0 0 0 4.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.3 3.5 6.5 6.8 7A4.8 4.8 0 0 0 9 18v4"></path></svg></a>
+<a aria-label="LinkedIn" class="grid h-10 w-10 place-items-center rounded-xl border border-black/10 text-muted transition hover:border-cyan-400/40 hover:text-cyan-400 dark:border-white/10" href="https://linkedin.com/in/fajarcahyadiputra3" rel="noopener noreferrer" target="_blank"><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V9h4v2M2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4"></path></svg></a>
+<a aria-label="Email" class="grid h-10 w-10 place-items-center rounded-xl border border-black/10 text-muted transition hover:border-cyan-400/40 hover:text-cyan-400 dark:border-white/10" href="mailto:fajarcahyadiputra3@gmail.com"><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 5h16v14H4zM4 7l8 6 8-6"></path></svg></a>
+</div>
+</div>
+</footer>
+<button aria-label="Kembali ke atas" class="back-to-top fixed bottom-5 right-5 z-40 grid h-12 w-12 place-items-center rounded-2xl bg-gradient-to-br from-cyan-400 to-blue-500 text-slate-950 shadow-glow" data-i18n-aria="backToTop" data-i18n-title="backToTop" id="backToTop" title="Kembali ke atas" type="button"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24"><path d="m18 15-6-6-6 6"></path></svg></button>
+
+<!-- Project image lightbox -->
+<div aria-hidden="true" aria-modal="true" class="project-lightbox" id="projectLightbox" role="dialog">
+<button aria-label="Tutup gambar" class="lightbox-backdrop" data-i18n-aria="closeImage" id="lightboxBackdrop" type="button"></button>
+<div class="lightbox-panel" role="document">
+<div class="lightbox-header">
+<div><p class="lightbox-title" id="lightboxTitle">Project image</p><p class="lightbox-meta" id="lightboxMeta">1 / 3</p></div>
+<button aria-label="Tutup gambar" class="lightbox-close" data-i18n-aria="closeImage" id="lightboxClose" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"></path></svg></button>
+</div>
+<div class="lightbox-stage-wrap">
+<div class="lightbox-stage" id="lightboxStage"></div>
+<button aria-label="Gambar sebelumnya" class="lightbox-nav lightbox-prev" data-i18n-aria="previousImage" id="lightboxPrev" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"></path></svg></button>
+<button aria-label="Gambar berikutnya" class="lightbox-nav lightbox-next" data-i18n-aria="nextImage" id="lightboxNext" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"></path></svg></button>
+<div aria-label="Project images" class="lightbox-dots" id="lightboxDots" role="tablist"></div>
+</div>
+</div>
+</div>
+
+<div aria-live="polite" class="toast glass fixed bottom-5 left-1/2 z-[60] flex w-[calc(100%-2rem)] max-w-md -translate-x-1/2 items-center gap-3 rounded-2xl px-4 py-3 text-sm font-medium" id="toast" role="status">
+<span class="grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-emerald-400/10 text-emerald-500" id="toastIcon"><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></svg></span>
+<span data-i18n="toastReady" id="toastMessage">Pesan berhasil divalidasi.</span>
+</div>
+<script defer src="js/main.js"></script>
+</body>
+</html>
+
