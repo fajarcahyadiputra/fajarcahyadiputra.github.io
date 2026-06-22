@@ -1,0 +1,16 @@
+<svg aria-label="Upload &amp; Analyze" class="project-shot-image" role="img" viewBox="0 0 720 450" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#111827" height="450" rx="30" width="720"></rect>
+<rect fill="#0b1220" height="414" rx="24" stroke="#334155" width="684" x="18" y="18"></rect>
+<circle cx="48" cy="47" fill="#fb7185" r="6"></circle><circle cx="68" cy="47" fill="#fbbf24" r="6"></circle><circle cx="88" cy="47" fill="#34d399" r="6"></circle>
+<rect fill="#1e293b" height="16" rx="8" width="180" x="112" y="39"></rect>
+<rect fill="#334155" height="1" width="684" x="18" y="72"></rect>
+<text fill="#e2e8f0" font-family="Inter,Arial" font-size="19" font-weight="700" x="42" y="105">Upload &amp; Analyze</text>
+<rect fill="#111827" height="250" rx="18" stroke="#334155" width="398" x="42" y="125"></rect>
+<rect fill="#090f1c" height="210" rx="14" width="358" x="62" y="145"></rect><path d="M207 218l0 64 58-32z" fill="#a78bfa" opacity=".9"></path><circle cx="236" cy="250" fill="none" opacity=".35" r="57" stroke="#8b5cf6" stroke-width="3"></circle>
+<rect fill="#14172a" height="250" rx="18" width="218" x="460" y="125"></rect>
+<rect fill="#1e1b4b" height="96" rx="16" stroke="#7c3aed" stroke-dasharray="8 8" width="168" x="485" y="153"></rect><path d="M555 186v30M540 201h30" stroke="#c4b5fd" stroke-linecap="round" stroke-width="4"></path><text fill="#c4b5fd" font-family="Inter,Arial" font-size="11" x="521" y="233">DROP VIDEO</text>
+<text fill="#94a3b8" font-family="Inter,Arial" font-size="11" x="485" y="282">LANGUAGE</text><rect fill="#20243b" height="35" rx="10" width="168" x="485" y="295"></rect><text fill="#e2e8f0" font-family="Inter,Arial" font-size="12" x="500" y="317">Bahasa Indonesia</text>
+<rect fill="#7c3aed" height="33" rx="10" width="168" x="485" y="342"></rect><text fill="white" font-family="Inter,Arial" font-size="12" font-weight="700" x="525" y="363">ANALYZE VIDEO</text>
+<rect fill="#1e293b" height="12" rx="6" width="636" x="42" y="391"></rect><rect fill="#8b5cf6" height="12" rx="6" width="420" x="42" y="391"></rect>
+</svg>
+

@@ -1,0 +1,15 @@
+<svg aria-label="Reports &amp; Export" class="project-shot-image" role="img" viewBox="0 0 720 450" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#111827" height="450" rx="30" width="720"></rect>
+<rect fill="#0b1220" height="414" rx="24" stroke="#334155" width="684" x="18" y="18"></rect>
+<circle cx="48" cy="47" fill="#fb7185" r="6"></circle><circle cx="68" cy="47" fill="#fbbf24" r="6"></circle><circle cx="88" cy="47" fill="#34d399" r="6"></circle>
+<rect fill="#1e293b" height="16" rx="8" width="180" x="112" y="39"></rect>
+<rect fill="#334155" height="1" width="684" x="18" y="72"></rect>
+<text fill="#e2e8f0" font-family="Inter,Arial" font-size="19" font-weight="700" x="42" y="105">Reports &amp; Export</text>
+<rect fill="#101827" height="278" rx="18" stroke="#1e293b" width="408" x="42" y="125"></rect>
+<text fill="#cbd5e1" font-family="Inter,Arial" font-size="13" font-weight="600" x="66" y="158">Monthly revenue</text>
+<g fill="#1e293b"><rect height="170" width="1" x="68" y="190"></rect><rect height="1" width="348" x="68" y="359"></rect></g>
+<g fill="#22d3ee"><rect height="74" opacity=".55" rx="8" width="35" x="94" y="285"></rect><rect height="121" opacity=".7" rx="8" width="35" x="151" y="238"></rect><rect height="92" opacity=".6" rx="8" width="35" x="208" y="267"></rect><rect height="156" rx="8" width="35" x="265" y="203"></rect><rect height="130" opacity=".8" rx="8" width="35" x="322" y="229"></rect><rect height="180" rx="8" width="35" x="379" y="179"></rect></g>
+<rect fill="#17172d" height="132" rx="18" width="210" x="468" y="125"></rect><circle cx="573" cy="191" fill="none" r="43" stroke="#312e81" stroke-width="16"></circle><path d="M573 148a43 43 0 1 1-38 63" fill="none" stroke="#a78bfa" stroke-linecap="round" stroke-width="16"></path><text fill="#f8fafc" font-family="Inter,Arial" font-size="18" font-weight="700" x="553" y="197">76%</text>
+<rect fill="#111827" height="130" rx="18" stroke="#1e293b" width="210" x="468" y="273"></rect><text fill="#94a3b8" font-family="Inter,Arial" font-size="11" x="490" y="306">EXPORT REPORT</text><rect fill="#164e63" height="42" rx="11" width="76" x="490" y="327"></rect><text fill="#a5f3fc" font-family="Inter,Arial" font-size="12" font-weight="700" x="514" y="353">CSV</text><rect fill="#312e81" height="42" rx="11" width="76" x="578" y="327"></rect><text fill="#c4b5fd" font-family="Inter,Arial" font-size="12" font-weight="700" x="598" y="353">XLSX</text>
+</svg>
+

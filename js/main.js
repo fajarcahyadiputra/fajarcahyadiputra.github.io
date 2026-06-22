@@ -63,6 +63,9 @@
     document.querySelectorAll('[data-i18n-aria]').forEach(element => {
       element.setAttribute('aria-label', t(element.dataset.i18nAria));
     });
+    document.querySelectorAll('[data-i18n-alt]').forEach(element => {
+      element.alt = t(element.dataset.i18nAlt);
+    });
     document.querySelectorAll('[data-i18n-title]').forEach(element => {
       element.title = t(element.dataset.i18nTitle);
     });
@@ -406,5 +409,4 @@
   initializeProjectGalleries();
   applyLanguage(currentLanguage);
 })();
-
 

@@ -1,0 +1,16 @@
+<svg aria-label="Orders Management" class="project-shot-image" role="img" viewBox="0 0 720 450" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#111827" height="450" rx="30" width="720"></rect>
+<rect fill="#0b1220" height="414" rx="24" stroke="#334155" width="684" x="18" y="18"></rect>
+<circle cx="48" cy="47" fill="#fb7185" r="6"></circle><circle cx="68" cy="47" fill="#fbbf24" r="6"></circle><circle cx="88" cy="47" fill="#34d399" r="6"></circle>
+<rect fill="#1e293b" height="16" rx="8" width="180" x="112" y="39"></rect>
+<rect fill="#334155" height="1" width="684" x="18" y="72"></rect>
+<text fill="#e2e8f0" font-family="Inter,Arial" font-size="19" font-weight="700" x="42" y="105">Orders Management</text>
+<rect fill="#101827" height="278" rx="18" stroke="#1e293b" width="636" x="42" y="125"></rect>
+<rect fill="#172033" height="36" rx="10" width="250" x="62" y="145"></rect><circle cx="82" cy="163" fill="none" r="7" stroke="#64748b" stroke-width="2"></circle><path d="M87 168l7 7" stroke="#64748b" stroke-width="2"></path>
+<rect fill="#155e75" height="36" rx="10" width="108" x="550" y="145"></rect><text fill="#cffafe" font-family="Inter,Arial" font-size="12" font-weight="700" x="575" y="168">NEW ORDER</text>
+<g fill="#94a3b8" font-family="Inter,Arial" font-size="11"><text x="65" y="213">ORDER ID</text><text x="185" y="213">CUSTOMER</text><text x="345" y="213">AMOUNT</text><text x="450" y="213">STATUS</text><text x="585" y="213">DATE</text></g>
+<g fill="#1e293b"><rect height="1" width="596" x="62" y="226"></rect><rect height="1" width="596" x="62" y="270"></rect><rect height="1" width="596" x="62" y="314"></rect><rect height="1" width="596" x="62" y="358"></rect></g>
+<g fill="#e2e8f0" font-family="Inter,Arial" font-size="12"><text x="65" y="254">#ORD-1048</text><text x="185" y="254">Alya Putri</text><text x="345" y="254">$1,240</text><text x="585" y="254">Jun 22</text><text x="65" y="298">#ORD-1047</text><text x="185" y="298">Bima S.</text><text x="345" y="298">$840</text><text x="585" y="298">Jun 22</text><text x="65" y="342">#ORD-1046</text><text x="185" y="342">Citra Dewi</text><text x="345" y="342">$2,180</text><text x="585" y="342">Jun 21</text><text x="65" y="386">#ORD-1045</text><text x="185" y="386">Danu R.</text><text x="345" y="386">$620</text><text x="585" y="386">Jun 21</text></g>
+<g font-family="Inter,Arial" font-size="10" font-weight="700"><rect fill="#064e3b" height="23" rx="11.5" width="76" x="445" y="237"></rect><text fill="#6ee7b7" x="462" y="252">PAID</text><rect fill="#78350f" height="23" rx="11.5" width="76" x="445" y="281"></rect><text fill="#fcd34d" x="458" y="296">PENDING</text><rect fill="#064e3b" height="23" rx="11.5" width="76" x="445" y="325"></rect><text fill="#6ee7b7" x="462" y="340">PAID</text><rect fill="#3f1d2e" height="23" rx="11.5" width="76" x="445" y="369"></rect><text fill="#fda4af" x="459" y="384">FAILED</text></g>
+</svg>
+
